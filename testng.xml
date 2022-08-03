@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Testing securian retirement calculator">
+  <test thread-count="5" name="Test">
+  <parameter name="browsername" value="chrome" />
+  <parameter name="url" value="https://www.securian.com/insights-tools/retirement-calculator.html" />
+  <parameter name="chromepath" value="path for chromedriver on your local machine" />
+  <parameter name="geckopath" value="path for geckodriver on your local machine" />
+    <classes>
+      <class name="classes.test.assignment.securian.ValidateForm"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
